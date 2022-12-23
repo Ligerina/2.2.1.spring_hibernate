@@ -16,20 +16,20 @@ public class MainApp {
       UserService userService = context.getBean(UserService.class);
 
       //Создаем пользователей. Первые 2 будут с машинами, а остальные без
-      User user = new User("Anton3","Suhankin3","anto1.sukhankin3@mail.ru");
-      Car car = new Car("newModel3",123);
-      user.setCar(car);
-      userService.add(user);
-
-      User user2 = new User("Saul3","Goodman3","Tsaul3.good@man.ru");
-      Car car2 = new Car("Mers3",111);
-      user2.setCar(car2);
-      userService.add(user2);
-
-      userService.add(new User("User1", "Lastname1", "user1@mail.ru"));
-      userService.add(new User("User2", "Lastname2", "user2@mail.ru"));
-      userService.add(new User("User3", "Lastname3", "user3@mail.ru"));
-      userService.add(new User("User4", "Lastname4", "user4@mail.ru"));
+//      User user = new User("Anton3","Suhankin3","anto1.sukhankin3@mail.ru");
+//      Car car = new Car("newModel3",123);
+//      user.setCar(car);
+//      userService.add(user);
+//
+//      User user2 = new User("Saul3","Goodman3","Tsaul3.good@man.ru");
+//      Car car2 = new Car("Mers3",111);
+//      user2.setCar(car2);
+//      userService.add(user2);
+//
+//      userService.add(new User("User1", "Lastname1", "user1@mail.ru"));
+//      userService.add(new User("User2", "Lastname2", "user2@mail.ru"));
+//      userService.add(new User("User3", "Lastname3", "user3@mail.ru"));
+//      userService.add(new User("User4", "Lastname4", "user4@mail.ru"));
 
       //Выведем всех пользователей
       List<User> users = userService.listUsers();
